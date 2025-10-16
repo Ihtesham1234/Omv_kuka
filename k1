@@ -1,0 +1,11 @@
+from isaacsim.core.prims import SingleArticulation, XFormPrim
+
+robot = SingleArticulation("/World/KUKA")
+cube = XFormPrim("/World/Cube1")
+
+print("Robot methods:")
+print(dir(robot))
+
+print("\nCube methods:")
+print(dir(cube))
+``
