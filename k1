@@ -1,11 +1,158 @@
-from isaacsim.core.prims import SingleArticulation, XFormPrim
-
-robot = SingleArticulation("/World/KUKA")
-cube = XFormPrim("/World/Cube1")
-
-print("Robot methods:")
-print(dir(robot))
-
-print("\nCube methods:")
-print(dir(cube))
-``
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer] Failed to import python module p_p_python. Error: cannot import name 'SingleArticulation' from 'omni.isaac.core.articulations' (d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extsdeprecated/omni.isaac.core/omni/isaac/core/articulations/__init__.py). Traceback:
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer] Traceback (most recent call last):
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]   File "d:\omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/kit/kernel/py\omni\ext\_impl\custom_importer.py", line 85, in import_module
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]     return importlib.import_module(name)
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]   File "d:\omniverse\apps\isaac-sim-standalone-5.0.0-windows-x86_64\kit\python\Lib\importlib\__init__.py", line 126, in import_module
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]     return _bootstrap._gcd_import(name[level:], package, level)
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/__init__.py", line 15, in <module>
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]     from .extension import *
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/extension.py", line 31, in <module>
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]     from .ui_builder import UIBuilder
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/ui_builder.py", line 5, in <module>
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]     from .scenario import ExampleScenario
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/scenario.py", line 2, in <module>
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer]     from omni.isaac.core.articulations import SingleArticulation
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer] ImportError: cannot import name 'SingleArticulation' from 'omni.isaac.core.articulations' (d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extsdeprecated/omni.isaac.core/omni/isaac/core/articulations/__init__.py)
+2025-10-16 11:32:51  [Error] [omni.ext._impl.custom_importer] 
+2025-10-16 11:32:51  [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'p_p_python' in 'c:\users\administrator\downloads\ahmed\ahmed\p_p' failed to load.
+2025-10-16 11:32:51  [Error] [carb.scripting-python.plugin] 
+2025-10-16 11:32:51  [Error] [carb.scripting-python.plugin] At:
+2025-10-16 11:32:51  [Error] [carb.scripting-python.plugin]   d:\omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/kit/kernel/py\omni\ext\_impl\_internal.py(222): startup
+2025-10-16 11:32:51  [Error] [carb.scripting-python.plugin]   d:\omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/kit/kernel/py\omni\ext\_impl\_internal.py(337): startup_extension
+2025-10-16 11:32:51  [Error] [carb.scripting-python.plugin]   PythonExtension.cpp::startup()(2): <module>
+2025-10-16 11:32:51  [Error] [carb.scripting-python.plugin]   d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.kit.window.extensions-1.4.26+8131b85d/omni/kit/window/extensions/ext_commands.py(33): do
+2025-10-16 11:32:51  [Error] [carb.scripting-python.plugin]   d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.kit.commands-1.4.10+8131b85d.wx64.r.cp311/omni/kit/undo/undo.py(81): execute
+2025-10-16 11:32:51  [Error] [carb.scripting-python.plugin]   d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.kit.commands-1.4.10+8131b85d.wx64.r.cp311/omni/kit/commands/command.py(463): execute
+2025-10-16 11:32:51  [Error] [carb.scripting-python.plugin]   d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.kit.window.extensions-1.4.26+8131b85d/omni/kit/window/extensions/common.py(556): toggle_extension
+2025-10-16 11:32:51  [Error] [carb.scripting-python.plugin]   d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.kit.window.extensions-1.4.26+8131b85d/omni/kit/window/extensions/ext_components.py(108): toggle
+2025-10-16 11:32:51  [Error] [carb.scripting-python.plugin] 
+2025-10-16 11:32:51  [Error] [omni.ext.plugin] [ext: p_p-1.0.1] Failed to startup python extension.
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.graph-1.141.2+8131b85d.wx64.r.cp311/omni/graph/core/_impl/_registration/extension_management.py", line 151, in extension_management_factory
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:     main_module = sys.modules[module_name]
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:                   ~~~~~~~~~~~^^^^^^^^^^^^^
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]: KeyError: 'p_p_python'
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]: 
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]: During handling of the above exception, another exception occurred:
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]: 
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.graph-1.141.2+8131b85d.wx64.r.cp311/omni/graph/core/_impl/extension.py", line 199, in __register_nodes
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:     new_registration = og.PythonNodeRegistration(ext_name, module_name, ext_path, autonode_config)
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.graph-1.141.2+8131b85d.wx64.r.cp311/omni/graph/core/_impl/registration.py", line 42, in __init__
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:     self.__deregistration_methods = register_python_ogn(ext_name, module_name, ext_path)
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "d:\omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/kit/kernel/py\carb\profiler\__init__.py", line 99, in wrapper
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:     r = f(*args, **kwds)
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:         ^^^^^^^^^^^^^^^^
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.graph-1.141.2+8131b85d.wx64.r.cp311/omni/graph/core/_impl/_registration/register_python_ogn.py", line 77, in register_python_ogn
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:     ext_contents = extension_management_factory(ext_name, module_name, Path(ext_path_name))
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.graph-1.141.2+8131b85d.wx64.r.cp311/omni/graph/core/_impl/_registration/extension_management.py", line 154, in extension_management_factory
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:     main_module = import_module(module_name)
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "d:\omniverse\apps\isaac-sim-standalone-5.0.0-windows-x86_64\kit\python\Lib\importlib\__init__.py", line 126, in import_module
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:     return _bootstrap._gcd_import(name[level:], package, level)
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/__init__.py", line 15, in <module>
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:     from .extension import *
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/extension.py", line 31, in <module>
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:     from .ui_builder import UIBuilder
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/ui_builder.py", line 5, in <module>
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:     from .scenario import ExampleScenario
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/scenario.py", line 2, in <module>
+2025-10-16 11:32:51  [Error] [omni.kit.app._impl] [py stderr]:     from omni.isaac.core.articulations import SingleArticulation
+2025-10-16 11:32:52  [Error] [omni.kit.app._impl] [py stderr]: ImportError: cannot import name 'SingleArticulation' from 'omni.isaac.core.articulations' (d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extsdeprecated/omni.isaac.core/omni/isaac/core/articulations/__init__.py)
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer] Failed to import python module p_p_python. Error: cannot import name 'SingleArticulation' from 'omni.isaac.core.articulations' (d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extsdeprecated/omni.isaac.core/omni/isaac/core/articulations/__init__.py). Traceback:
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer] Traceback (most recent call last):
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]   File "d:\omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/kit/kernel/py\omni\ext\_impl\custom_importer.py", line 85, in import_module
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]     return importlib.import_module(name)
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]   File "d:\omniverse\apps\isaac-sim-standalone-5.0.0-windows-x86_64\kit\python\Lib\importlib\__init__.py", line 126, in import_module
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]     return _bootstrap._gcd_import(name[level:], package, level)
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/__init__.py", line 15, in <module>
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]     from .extension import *
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/extension.py", line 31, in <module>
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]     from .ui_builder import UIBuilder
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/ui_builder.py", line 5, in <module>
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]     from .scenario import ExampleScenario
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/scenario.py", line 2, in <module>
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer]     from omni.isaac.core.articulations import SingleArticulation
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer] ImportError: cannot import name 'SingleArticulation' from 'omni.isaac.core.articulations' (d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extsdeprecated/omni.isaac.core/omni/isaac/core/articulations/__init__.py)
+2025-10-16 11:33:24  [Error] [omni.ext._impl.custom_importer] 
+2025-10-16 11:33:24  [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'p_p_python' in 'c:\users\administrator\downloads\ahmed\ahmed\p_p' failed to load.
+2025-10-16 11:33:24  [Error] [carb.scripting-python.plugin] 
+2025-10-16 11:33:24  [Error] [carb.scripting-python.plugin] At:
+2025-10-16 11:33:24  [Error] [carb.scripting-python.plugin]   d:\omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/kit/kernel/py\omni\ext\_impl\_internal.py(222): startup
+2025-10-16 11:33:24  [Error] [carb.scripting-python.plugin]   d:\omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/kit/kernel/py\omni\ext\_impl\_internal.py(337): startup_extension
+2025-10-16 11:33:24  [Error] [carb.scripting-python.plugin]   PythonExtension.cpp::startup()(2): <module>
+2025-10-16 11:33:24  [Error] [carb.scripting-python.plugin]   d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.kit.window.extensions-1.4.26+8131b85d/omni/kit/window/extensions/ext_commands.py(33): do
+2025-10-16 11:33:24  [Error] [carb.scripting-python.plugin]   d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.kit.commands-1.4.10+8131b85d.wx64.r.cp311/omni/kit/undo/undo.py(81): execute
+2025-10-16 11:33:24  [Error] [carb.scripting-python.plugin]   d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.kit.commands-1.4.10+8131b85d.wx64.r.cp311/omni/kit/commands/command.py(463): execute
+2025-10-16 11:33:24  [Error] [carb.scripting-python.plugin]   d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.kit.window.extensions-1.4.26+8131b85d/omni/kit/window/extensions/common.py(556): toggle_extension
+2025-10-16 11:33:24  [Error] [carb.scripting-python.plugin]   d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.kit.window.extensions-1.4.26+8131b85d/omni/kit/window/extensions/ext_components.py(108): toggle
+2025-10-16 11:33:24  [Error] [carb.scripting-python.plugin] 
+2025-10-16 11:33:24  [Error] [omni.ext.plugin] [ext: p_p-1.0.1] Failed to startup python extension.
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.graph-1.141.2+8131b85d.wx64.r.cp311/omni/graph/core/_impl/_registration/extension_management.py", line 151, in extension_management_factory
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:     main_module = sys.modules[module_name]
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:                   ~~~~~~~~~~~^^^^^^^^^^^^^
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]: KeyError: 'p_p_python'
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]: 
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]: During handling of the above exception, another exception occurred:
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]: 
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]: Traceback (most recent call last):
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.graph-1.141.2+8131b85d.wx64.r.cp311/omni/graph/core/_impl/extension.py", line 199, in __register_nodes
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:     new_registration = og.PythonNodeRegistration(ext_name, module_name, ext_path, autonode_config)
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.graph-1.141.2+8131b85d.wx64.r.cp311/omni/graph/core/_impl/registration.py", line 42, in __init__
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:     self.__deregistration_methods = register_python_ogn(ext_name, module_name, ext_path)
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "d:\omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/kit/kernel/py\carb\profiler\__init__.py", line 99, in wrapper
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:     r = f(*args, **kwds)
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:         ^^^^^^^^^^^^^^^^
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.graph-1.141.2+8131b85d.wx64.r.cp311/omni/graph/core/_impl/_registration/register_python_ogn.py", line 77, in register_python_ogn
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:     ext_contents = extension_management_factory(ext_name, module_name, Path(ext_path_name))
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extscache/omni.graph-1.141.2+8131b85d.wx64.r.cp311/omni/graph/core/_impl/_registration/extension_management.py", line 154, in extension_management_factory
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:     main_module = import_module(module_name)
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "d:\omniverse\apps\isaac-sim-standalone-5.0.0-windows-x86_64\kit\python\Lib\importlib\__init__.py", line 126, in import_module
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:     return _bootstrap._gcd_import(name[level:], package, level)
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/__init__.py", line 15, in <module>
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:     from .extension import *
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/extension.py", line 31, in <module>
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:     from .ui_builder import UIBuilder
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/ui_builder.py", line 5, in <module>
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:     from .scenario import ExampleScenario
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:   File "c:/users/administrator/downloads/ahmed/ahmed/p_p/p_p_python/scenario.py", line 2, in <module>
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]:     from omni.isaac.core.articulations import SingleArticulation
+2025-10-16 11:33:25  [Error] [omni.kit.app._impl] [py stderr]: ImportError: cannot import name 'SingleArticulation' from 'omni.isaac.core.articulations' (d:/omniverse/apps/isaac-sim-standalone-5.0.0-windows-x86_64/extsdeprecated/omni.isaac.core/omni/isaac/core/articulations/__init__.py)
