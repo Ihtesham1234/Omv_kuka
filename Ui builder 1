@@ -1,0 +1,13 @@
+# Load the KUKA robot
+robot_prim_path = "/kr210_l150"
+path_to_robot_usd = "D:/Ext/kuka/data/Collected_kr210_l150/kr210_l150.usd"
+
+print(f"Loading robot from: {path_to_robot_usd}")
+add_reference_to_stage(path_to_robot_usd, robot_prim_path)
+
+# ✅ Add the table and cubes from external USD
+table_usd_path = "D:/Ext/kuka/data/TableScene/table_and_cubes.usd"  # <-- change path to your USD
+table_prim_path = "/World/TableSetup"
+
+print(f"Loading table and cubes from: {table_usd_path}")
+add_reference_to_stage(table_usd_path, table_prim_path)
